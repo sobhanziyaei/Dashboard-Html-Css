@@ -6,6 +6,11 @@
 
 body {
     font-family: 'Raleway';
+    background-color: var(--color_light_gray);
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "aside header" "aside main";
+    grid-template-rows: 100px 100vh;
 }
 
 
@@ -68,4 +73,33 @@ body {
     font-weight: 300;
     font-style: normal;
     src: url('../fonts/Raleway/Raleway-Light.woff') format('woff');
+}
+
+header {
+    grid-area: header;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+aside {
+    grid-area: aside;
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    border-right: 2px solid rgba(0, 0, 0, 0.12);
+    padding: 32px;
+}
+
+main {
+    grid-area: main;
+}
+
+aside .logo {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+aside .logo span {
+    font-size: 21px;
+    font-weight: 700;
 }
