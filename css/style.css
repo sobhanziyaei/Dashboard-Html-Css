@@ -8,6 +8,26 @@ body {
     font-family: 'Raleway';
 }
 
+
+/* colors light */
+:root {
+    --color_white: #fff;
+    --color_black: #1A2029;
+    --color_gray: #14161D;
+    --color_light_gray: #F8F8F8;
+    --color_dark_gray: #31353F;
+    --color_light_purple: #8C77ED;
+    --color_blue: #3A6FF8;
+    --color_green: #1ECB4F;
+    --color_light_red: #F46D22;
+}
+
+
+/* colors dark */
+:root[data-theme="dark"] {
+    --color_white: #cb0909;
+}
+
 @font-face {
     font-family: 'Raleway';
     font-weight: 900;
