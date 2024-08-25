@@ -191,3 +191,56 @@ aside .logo span {
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
+
+header.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header-section .header-title {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--color_black);
+}
+
+.header-search-section {
+    width: 52%;
+    height: 44px;
+    background-color: var(--color_white);
+    border-radius: 8px;
+    padding: 0 20px;
+    position: relative;
+
+}
+
+.header-search-section form {
+    width: 100%;
+    height: 100%;
+}
+
+.header-search-section input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.header-search-section img {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.header-info-section {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header-info-section .header-info-user-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
